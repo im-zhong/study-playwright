@@ -2,6 +2,14 @@
 # https://playwright.dev/python/docs/intro
 # https://playwright.dev/python/docs/writing-tests
 
+# 这里讲了一些pytest for Playwright常用方法
+# async fixture: https://playwright.dev/python/docs/test-runners#async-fixtures
+# pytest for playwright: https://playwright.dev/python/docs/test-runners
+
+
+# Guide： https://playwright.dev/python/docs/input
+# 这里面就是具体怎么去使用playwright各种各样的功能了，用到那个看哪个就行了
+
 ## Playwright tests are simple, they
 # - perform actions, and
 # - assert the state against expectations.
@@ -78,3 +86,5 @@ def before_each_after_each(page: Page):
 def test_main_navigation(page: Page):
     # Assertions use the expect API.
     expect(page).to_have_url("https://playwright.dev/")
+
+
